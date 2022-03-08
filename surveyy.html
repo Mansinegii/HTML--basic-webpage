@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+<!--css file link-->
+<link rel="stylesheet" href="n.css">
+ </head>
+
+
+
+   
+
+<body>
+
+
+
+
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Internship Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you  for doing internship!!!!!!!!!!
+      </p>
+    </header>
+    
+
+    <form id="survey-form" class="form-container" action="">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="value0"
+          class="form-control"
+          placeholder="Enter your name"
+          
+        
+        />
+      </div>
+      <div class="form-group">
+        <label >Email</label>
+        <input
+          type="email"
+          name="email"
+          id="value1"
+          class="form-control"
+          placeholder="Enter your Email"
+        
+        />
+        <div class="form-group">
+        <label>Number</label>
+        <input
+          type="number"
+          name="Number"
+          id="value2"
+          class="form-control"
+          placeholder="Enter your phone number"
+          
+        />
+        </div>
+      
+        <div class="form-group">
+        <label>Address</label>
+        <input
+          type="address"
+          name="address"
+          id="value3"
+          class="form-control"
+          placeholder="Enter your Address"
+          
+        />
+      
+      <div class="form-group">
+        <label>semester<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="semester"
+          id="value4"
+          min="1"
+          max="4"
+          class="form-control"
+          placeholder="enter your semester"
+        />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Teacher</option>
+          
+    
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>How you come to know about internship(women tech'22)????</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio" id="check"
+            
+            checked
+          />Friends</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio" id="check"
+          />Poster</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio" id="check"
+          />social media</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+         Do you like our session
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" >
+          <option disabled selected value>Select an option</option>
+          <option value="yes">yes</option>
+          <option value="No">NO</option>
+          
+        </select>
+      </div>
+  
+      
+      <div class="form-group">
+        <p>Give feedback here?</p>
+        <textarea
+          id="value5"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your feedback."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+        
+      </div>
+      
+    
+  
+    </form>
+    
+
+
+
+    
+  
+
+  
+    <script type="text/javascript">
+
+
+      function counter(){
+        var c=0;
+
+        for(i = 0; i < 5;i++){
+          if (document.getElementById("value"+ i).value !=='')
+          {
+            c = c + 1;
+          }
+        }
+        document.getElementById("sub").innerHTML=c;
+      }
+    </script>
+<button onclick="counter()">update</button>
+<p>choice<span id="sub"></span></p>
+
+
+
+</div>
+  
+</body>
+  </html>
